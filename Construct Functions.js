@@ -31,6 +31,7 @@ function Accumulator(startingValue) {
  	this.read = function () {
  		x = +prompt ('x ?');
  		y = +prompt ('y ?');
+ 		return this.validationFunc ();
  		};
  		this.validationFunc = function() {
 			if (isNaN(x)||isNaN(y)){          //проверка на Nan.
