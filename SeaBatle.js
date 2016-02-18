@@ -2,19 +2,20 @@
 // перивести названия функций к такому виду  this.field и пт. все это обернуть в функию конструктор BatleField.
 
 //  Функция по созданию поля.
-function Obj() {                      // Создаем функцию для авто наполнения
-	this.chip:false;
-	this.opened:false;
-	this.msg: "Промазал!";
+function Obj() {
+	this.chip=false;
+	this.opened=false;
+	this.msg = "Промазал!";
 };
 
-function field () {                                  // само поле
+	var res = [];
+function field () {
 	var x = +prompt('Введите ширину поля');
 	var y = +prompt('Введите высоту поля');
-	var res = [];
 	for (var i = 0; i<x; i++) {
 		res [i] = [];
 		for (var j = 0; j<y; j++) {
+			debugger;
 			res [i][j] = Obj();
 		};
 	};
@@ -26,9 +27,8 @@ function field () {                                  // само поле
 
 // функция размещения кораблей.
 function putChip (x,y) {
-	res [x][y] по этим координатам должно заменять - chip:false;  на chip:true;
+	res [x][y]=chip=true;
 }
-
 
 
 
