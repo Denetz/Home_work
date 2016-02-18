@@ -26,7 +26,7 @@ function field () {                                  // само поле
 
 // функция размещения кораблей.
 function putChip (x,y) {
-	res [x][y] по этим координатам должно заменять - chip:true;  на chip:false;
+	res [x][y] по этим координатам должно заменять - chip:false;  на chip:true;
 }
 
 
